@@ -209,15 +209,15 @@ span.accent-blue {
 }
 
 span.accent-green {
-  background: -webkit-linear-gradient(60deg, #0a8f53, #38ff95);
+  background: -webkit-linear-gradient(60deg, #0a8f53, #2cb86e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 p {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
-  color: #788ba6;
+  color: rgb(39, 39, 39);
   line-height: 1.5;
 }
 
@@ -232,15 +232,15 @@ a {
 button {
   font-family: Inter;
   /* background-color: #39298A; */
-  background-color: rgba(227, 216, 255, 0.682);
+  background-color: rgba(238, 230, 255, 0.779);
   color: rgb(56, 56, 56);
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 500;
   width: fit-content;
   padding: 9px 16px;
   border-radius: 11px;
   /* border: 1.5px solid #39298A; */
-  border: 1.5px solid #d6d6d6;
+  border: 1.5px solid #c8c8c8;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -307,4 +307,23 @@ svg.ionicon {
 
 .border-bottom {
   border-bottom: 1.5px solid #293445;
+}
+
+#typewriter {
+  color: rgb(79, 161, 255);
+}
+
+.cursor {
+  animation: blink 1s linear infinite;
+  color: rgb(79, 161, 255);
+}
+
+@keyframes blink {
+  0% {
+    opacity: 100%;
+  }
+
+  50% {
+    opacity: 0%;
+  }
 }
