@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=New+Amsterdam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=New+Amsterdam&family=Outfit:wght@100..900&display=swap');
+
 
 html {
   scroll-behavior: smooth;
@@ -6,7 +7,7 @@ html {
 
 body {
   font-family: Inter, sans-serif;
-  color: white;
+  color: black;
   padding: 0;
   margin: 0;
 }
@@ -22,7 +23,7 @@ section {
 }
 
 section.landing {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/static/bg.jpg") no-repeat center center;
+  background: radial-gradient(at 81% 63%, #9fc8fe 0px, transparent 50%), radial-gradient(at 47% 76%, #d4c2ff 0px, transparent 50%), radial-gradient(at 76% 3%, #b6ecc8 0px, transparent 50%), radial-gradient(at 36% 92%, #c2a8ff 0px, transparent 50%), #ffffff;
   background-size: cover;
   padding-top: 180px;
 }
@@ -56,9 +57,14 @@ nav.navbar {
   padding: 16px 128px;
 }
 
+nav.navbar h6 {
+  font-family: Outfit, sans-serif;
+}
+
 nav.navbar a {
   font-size: 17px;
-  color: white;
+  font-weight: bold;
+  color: black;
   text-decoration: none;
 }
 
@@ -190,9 +196,28 @@ h6 {
 	font-size: 24px;
 }
 
+span.accent-purple {
+  background: -webkit-linear-gradient(60deg, #701dff, #c093ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+span.accent-blue {
+  background: -webkit-linear-gradient(60deg, #1d83ff, #8fc7ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+span.accent-green {
+  background: -webkit-linear-gradient(60deg, #0a8f53, #38ff95);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 p {
   font-size: 20px;
-  color: #94a3b8;
+  font-weight: 600;
+  color: #788ba6;
   line-height: 1.5;
 }
 
@@ -206,21 +231,23 @@ a {
 
 button {
   font-family: Inter;
-  background-color: #39298A;
-  color: white;
+  /* background-color: #39298A; */
+  background-color: rgba(227, 216, 255, 0.682);
+  color: rgb(56, 56, 56);
   font-size: 18px;
   font-weight: 500;
   width: fit-content;
   padding: 9px 16px;
   border-radius: 11px;
-  border: 1.5px solid #39298A;
+  /* border: 1.5px solid #39298A; */
+  border: 1.5px solid #d6d6d6;
   transition: 0.3s;
   cursor: pointer;
 }
 
 button.secondary {
-  background-color: rgb(6,10,21);
-  border-color: #293445;
+  background-color: rgba(57, 255, 159, 0.682);
+  border-color: #d6d6d6;
 }
 
 button:hover {
