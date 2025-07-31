@@ -63,8 +63,9 @@ const typeWriter = async() => {
 typeWriter();
 
 const carouselImages = [
+  "https://i.insider.com/5e7cbdd62d654f10ac3f292b?width=700",
+  "https://www.gettingsmart.com/wp-content/uploads/2021/11/5ac23b4c-5960-418c-871a-e2ffc121b9ea_3C2FD6AE-B1C6-4428-AB1C-4C8020C52D59.jpeg",
   "https://www.learntobe.org/assets/photos/tutor-at-laptop-92fbe612c8c02f139d997ce30c9136e31916723b1fafb09d2a0f4be223f7c71c.jpg",
-  "https://www.gettingsmart.com/wp-content/uploads/2021/11/5ac23b4c-5960-418c-871a-e2ffc121b9ea_3C2FD6AE-B1C6-4428-AB1C-4C8020C52D59.jpeg"
 ];
 
 let carouselIndex = 0;

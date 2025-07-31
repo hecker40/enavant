@@ -12,7 +12,7 @@
     <nav class="flex space-between navbar" id="navbar">
       <div class="flex gap-8">
         <a class="flex gap-8 title" href="/">
-           <img src="evanant logo.png"style="width: 40px; height: 40px; object-fit: contain;">
+          <img src="https://raw.githubusercontent.com/hecker40/enavant/refs/heads/main/enavant%20logo.png" width="40px" height="40" style="object-fit:contain">
           <h6>enavant</h6>
         </a>
       </div>
@@ -40,7 +40,7 @@
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSd2wuX3B9NHZsYZVquEYNS2gVA5kiP22qFeOoFz6KsiT3tRcw/viewform?usp=sf_link" ><button>Start now</button></a>
       </div>
       <div class="flex col gap-32">
-        <img id="carouselImage" style="width:425px;height:400px;object-fit:cover;border: 1px solid gray;border-radius:20px;"></img>
+        <img id="carouselImage" width="425" height="400"></img>
         <div class="flex row gap-16">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" id="chevronLeft" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/></svg>
           <div class="flex row gap-16" id="carouselContainers"></div>
@@ -48,6 +48,8 @@
         </div>
       </div>
     </section>
+    <span class="toggle-placeholder"><ion-icon name="" onclick="changeTheme();" class="theme"></ion-icon></span>
     <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   </body>
 </html>

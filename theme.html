@@ -1,0 +1,88 @@
+<style>
+  .theme {
+  position: absolute;
+	width: 25px;
+	height: 25px;
+  bottom: 20px;
+  left: 20px;
+  padding: 6px;
+  border-radius: 50%;
+	cursor: pointer;
+	transition: transform 1s;
+}
+
+.theme.rotated {
+	transform: rotate(360deg);
+}
+
+.theme[name="moon"] {
+  background: #1f054d;
+  color: white;
+}
+
+.theme[name="sunny"] {
+  background: #b1ceff;
+	color: yellow;
+}
+</style>
+<span class="toggle-placeholder"><ion-icon name="" onclick="changeTheme();" class="theme"></ion-icon></span>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script>
+  var currentTheme;
+
+function checkTheme() {
+	currentTheme = localStorage.getItem("theme");
+
+	if (currentTheme === null) {
+		if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+			document.body.classList.add("dark-theme");
+			document.querySelector(".theme").setAttribute("name", "sunny");
+			localStorage.setItem("theme", "dark-theme");
+		}
+
+		else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+			document.body.classList.add("light-theme");
+			document.querySelector(".theme").setAttribute("name", "moon");
+			localStorage.setItem("theme", "light-theme");
+		}
+	}
+
+	else if (currentTheme === "light-theme") {
+		document.body.classList.add("light-theme");
+		document.querySelector(".theme").setAttribute("name", "moon");
+	}
+
+	else if (currentTheme === "dark-theme") {
+		document.body.classList.add("dark-theme");
+		document.querySelector(".theme").setAttribute("name", "sunny");
+	}
+
+	else {
+		localStorage.clear();
+	}
+}
+
+function changeTheme() {
+	currentTheme = localStorage.getItem("theme");
+  
+	if (currentTheme === "light-theme") {
+		document.body.classList.remove("light-theme");
+		document.body.classList.add("dark-theme");
+		localStorage.setItem("theme", "dark-theme");
+		document.querySelector(".theme").setAttribute("name", "sunny");
+	}
+
+	else if (currentTheme === "dark-theme") {
+		document.body.classList.remove("dark-theme");
+		document.body.classList.add("light-theme");
+		localStorage.setItem("theme", "light-theme");
+		document.querySelector(".theme").setAttribute("name", "moon");
+	}
+
+	currentTheme = localStorage.getItem("theme");
+
+	document.querySelector(".theme").classList.toggle("rotated");
+}
+
+checkTheme();
+</script>

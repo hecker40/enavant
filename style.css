@@ -38,10 +38,11 @@ nav {
   -webkit-backdrop-filter: blur(10px); */
   width: calc(100% - 250px);
   border-bottom: 1px solid transparent;
+  z-index: 999;
 }
 
 .nav-show {
-  background: linear-gradient(90deg,rgba(217, 255, 233, 1) 0%, rgba(191, 231, 255, 1) 50%, rgba(205, 171, 255, 1) 100%);
+  background: #d2ebffe7;
   border-bottom: 1px solid #979797;
   transition: 1s, backdrop-filter 0s, -webkit-backdrop-filter 0s;
   box-shadow: 0 5px 25px rgb(142, 142, 142);
@@ -355,4 +356,11 @@ svg.ionicon {
 
 .fade-out {
   animation: 0.3s linear fade-out;
+}
+
+#carouselImage {
+  object-fit: cover;
+  border: 1px solid gray;
+  border-radius: 20px;
+  z-index: 1;
 }
