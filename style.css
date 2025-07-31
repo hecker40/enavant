@@ -41,7 +41,7 @@ nav {
 }
 
 .nav-show {
-  background: linear-gradient()
+  background: linear-gradient(90deg,rgba(217, 255, 233, 1) 0%, rgba(191, 231, 255, 1) 50%, rgba(205, 171, 255, 1) 100%);
   border-bottom: 1px solid #979797;
   transition: 1s, backdrop-filter 0s, -webkit-backdrop-filter 0s;
   box-shadow: 0 5px 25px rgb(142, 142, 142);
