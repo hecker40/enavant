@@ -42,15 +42,11 @@
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSd2wuX3B9NHZsYZVquEYNS2gVA5kiP22qFeOoFz6KsiT3tRcw/viewform?usp=sf_link" ><button>Start now</button></a>
       </div>
       <div class="flex col gap-32">
-        <div style="background:#1f1f1f;width: 425px;height:400px;border: 2px solid gray;border-radius:20px;"></div>
+        <img id="carouselImage" style="width:425px;height:400px;object-fit:cover;border: 1px solid gray;border-radius:20px;"></img>
         <div class="flex row gap-16">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/></svg>
-          <div style="width:10px;height:10px;border-radius:50%;background:#1f1f1f;"></div>
-          <div style="width:10px;height:10px;border-radius:50%;background:#1f1f1f;"></div>
-          <div style="width:10px;height:10px;border-radius:50%;background:#1f1f1f;"></div>
-          <div style="width:10px;height:10px;border-radius:50%;background:#1f1f1f;"></div>
-          <div style="width:10px;height:10px;border-radius:50%;background:#1f1f1f;"></div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" id="chevronLeft" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/></svg>
+          <div class="flex row gap-16" id="carouselContainers"></div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" id="chevronRight" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/></svg>
         </div>
       </div>
     </section>

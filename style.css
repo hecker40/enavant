@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=New+Amsterdam&family=Outfit:wght@100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=New+Amsterdam&family=Outfit:wght@100..900&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -42,10 +41,10 @@ nav {
 }
 
 .nav-show {
-  background: rgb(6,10,21);
-  border-bottom: 1px solid #293445;
+  background: linear-gradient()
+  border-bottom: 1px solid #979797;
   transition: 1s, backdrop-filter 0s, -webkit-backdrop-filter 0s;
-  box-shadow: 0 5px 32px rgb(6,10,21);
+  box-shadow: 0 5px 25px rgb(142, 142, 142);
 }
 
 .nav-fade {
@@ -215,9 +214,11 @@ span.accent-green {
 }
 
 p {
+  font-family: "Manrope", sans-serif;
   font-size: 22px;
   font-weight: 600;
   color: rgb(39, 39, 39);
+  letter-spacing: 0.3px;
   line-height: 1.5;
 }
 
@@ -232,7 +233,7 @@ a {
 button {
   font-family: Inter;
   /* background-color: #39298A; */
-  background-color: rgba(238, 230, 255, 0.779);
+  background-color: rgba(250, 248, 255, 0.779);
   color: rgb(56, 56, 56);
   font-size: 19px;
   font-weight: 500;
@@ -326,4 +327,32 @@ svg.ionicon {
   50% {
     opacity: 0%;
   }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  animation: 0.3s linear fade-in;
+}
+
+.fade-out {
+  animation: 0.3s linear fade-out;
 }
