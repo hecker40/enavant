@@ -87,11 +87,11 @@ for (let i = 0; i < carouselImages.length; i++) {
 
 function updateChevronStyles() {
   chevronRight.style.color = "#1f1f1f";
-  chevronRight.style.opacity = carouselIndex + 1 === carouselImages.length ? "0.5" : "1";
+  chevronRight.style.opacity = carouselIndex + 1 === carouselImages.length ? "0.4" : "1";
   chevronRight.style.cursor = carouselIndex + 1 === carouselImages.length ? "default" : "pointer";
 
   chevronLeft.style.color = "#1f1f1f";
-  chevronLeft.style.opacity = carouselIndex === 0 ? "0.5" : "1";
+  chevronLeft.style.opacity = carouselIndex === 0 ? "0.4" : "1";
   chevronLeft.style.cursor = carouselIndex === 0 ? "default" : "pointer";
 }
 
@@ -101,7 +101,7 @@ function updateImage() {
 
 function colorChevronSelector() {
   const element = document.getElementById("carousel" + carouselIndex);
-  element.style.backgroundColor = "#6d48ffff";
+  element.style.backgroundColor = "#375cffff";
 }
 
 function discolorChevronSelector() {

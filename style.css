@@ -18,13 +18,15 @@ body {
 }
 
 section {
+  background: linear-gradient(180deg, #ffffff, #bcffd8);
   padding: 64px 128px 256px;
+  border-bottom: 1px solid #979797;
 }
 
 section.landing {
   background: radial-gradient(at 81% 63%, #9fc8fe 0px, transparent 50%), radial-gradient(at 47% 76%, #d4c2ff 0px, transparent 50%), radial-gradient(at 76% 3%, #b6ecc8 0px, transparent 50%), radial-gradient(at 36% 92%, #c2a8ff 0px, transparent 50%), #ffffff;
-  background-size: cover;
   padding-top: 180px;
+  padding-bottom: 140px;
 }
 
 section.landing * {
@@ -42,10 +44,11 @@ nav {
 }
 
 .nav-show {
-  background: #d2ebffe7;
-  border-bottom: 1px solid #979797;
   transition: 1s, backdrop-filter 0s, -webkit-backdrop-filter 0s;
-  box-shadow: 0 5px 25px rgb(142, 142, 142);
+  box-shadow: 0 5px 17px rgb(172, 172, 172);
+  backdrop-filter: blur(30px);
+  border-bottom: 1px solid #979797;
+  background: rgba(248, 255, 251, 0.75);
 }
 
 .nav-fade {
@@ -234,30 +237,40 @@ a {
 button {
   font-family: Inter;
   /* background-color: #39298A; */
-  background-color: rgba(250, 248, 255, 0.779);
-  color: rgb(56, 56, 56);
-  font-size: 19px;
+  background-color: rgba(248, 251, 255, 0.779);
+  color: rgb(34, 34, 34);
+  font-size: 20px;
   font-weight: 500;
   width: fit-content;
   padding: 9px 16px;
   border-radius: 11px;
   /* border: 1.5px solid #39298A; */
-  border: 1.5px solid #c8c8c8;
+  border: 1.5px solid #b8b8b8;
   transition: 0.3s;
   cursor: pointer;
 }
 
 button.secondary {
-  background-color: rgba(57, 255, 159, 0.682);
-  border-color: #d6d6d6;
+  background-color: rgba(42, 255, 152, 0.846);
+  border-color: #a4a4a4;
 }
 
 button:hover {
-  border: 1.5px solid #5239CC;
+  border: 1.5px solid #396ccc;
 }
 
 button:active {
-  border-color: #795EFF;
+  background-color: rgba(226, 233, 255, 0.779);
+  border-color: #5e91ff;
+}
+
+button.secondary:hover {
+  border-color: rgba(14, 134, 76, 0.846) !important;
+}
+
+button.secondary:active {
+  background-color: rgba(34, 223, 132, 0.846);
+  border-color: rgba(26, 173, 102, 0.846) !important;
 }
 
 input {
@@ -305,10 +318,6 @@ svg.ionicon {
 
 .border-top {
   border-top: 1.5px solid #293445;
-}
-
-.border-bottom {
-  border-bottom: 1.5px solid #293445;
 }
 
 #typewriter {
